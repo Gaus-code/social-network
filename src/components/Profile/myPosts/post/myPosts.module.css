@@ -1,0 +1,44 @@
+.newPost{
+    width: 50%;
+    margin-left: 27px;
+    border-radius: 27px;
+    background: #DDEBF6;
+    margin-top: 20px;
+}
+.newPost__container{
+    font-size: 20px;
+    margin-left: 24px;
+    padding-top: 1px;
+}
+.newPost__input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+}
+.input{
+    width: 330px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: start;
+    font-size: 20px;
+}
+form{
+    position: relative;
+}
+.input__btn{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 50px;
+    background-color: #E5F4E3;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.btn__create{
+    width: 40px;
+    height: 40px;
+}

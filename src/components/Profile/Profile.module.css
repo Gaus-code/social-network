@@ -1,0 +1,106 @@
+.main {
+  grid-area: contents;
+}
+
+.banner {
+  background: #DDEBF6;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner__image {
+  width: 180px;
+  height: 180px;
+}
+
+.banner__info {
+  margin: 24px auto;
+}
+
+.banner__info h2 {
+  font-size: 32px;
+}
+
+.banner__info p {
+  font-size: 15px;
+  margin-top: -20px;
+}
+
+.profile {
+  width: 95%;
+  margin-top: 33px;
+  border-radius: 0px 22px 22px 0px;
+  background: #DDEBF6;
+}
+
+.profile__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.avatar {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+  font-size: 20px;
+}
+
+.profile__avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 130px;
+  font-size: 16px;
+}
+
+.profile__followers {
+  margin-top: -13px;
+}
+
+.post {
+  width: 330px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: flex-start;
+}
+
+.profile__posts {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.post__icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-left: 24px;
+}
+
+.post__text {
+  margin-top: 10px;
+}

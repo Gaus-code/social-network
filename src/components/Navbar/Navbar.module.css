@@ -1,0 +1,26 @@
+.navbar{
+    grid-area: nav;
+    border-radius: 0px 0px 0px 22px;
+    background: #2B2B2B;
+}
+.navbar__list{
+    margin: 80px auto;
+    list-style-type: none;
+}
+.navbar__item{
+    margin: 30px auto;
+}
+.navbar__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+.home_icon{
+    width: 27px;
+    height: 25px;
+}

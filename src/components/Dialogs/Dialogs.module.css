@@ -1,0 +1,64 @@
+.dialogs__container{
+    display: flex;
+    flex-direction: row;
+}
+.dialogs__menu{
+    width: 30%;
+    min-height: 570px;
+    background: #DDEBF6;
+    border-radius: 0px 22px 22px 0px;
+}
+.dialogs__avatars{
+    padding: 30px;
+}
+.dialogs__img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.dialogs__avatar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 13px;
+}
+.dialog__shortMes{
+    display: flex;
+    flex-direction: column;
+}
+.dialogs__mes{
+    margin-top: -10px;
+}
+
+.dialogs__messages{
+    width: 70%;
+    min-height: 570px;
+    border-bottom: 2px solid #2B2B2B;
+}
+.dialogs__form{
+    position: relative;
+    top: 515px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dialogs__form input{
+    width: 80%;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #2B2B2B;
+}
+.dialogs__form button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: 2px solid #2B2B2B;
+    background-color: #5DA9E9;
+}
