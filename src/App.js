@@ -17,7 +17,6 @@ function App() {
             <Route path='/profile' Component={Profile} />
           </Routes>
         </div>
-        <Dialogs />
       </div>
     </BrowserRouter>
   );
