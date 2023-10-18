@@ -17,6 +17,14 @@ const DialogsItem = (props) => {
     )
 }
 
+const Message = (props) => {
+    return (
+        <div className={classes.message_container}>
+            {props.message}
+        </div>
+    )
+}
+
 const Dialogs = () => {
     let dialogsData = [
         {id: 1, name: 'Dimych'},
@@ -25,23 +33,29 @@ const Dialogs = () => {
         {id: 4, name: 'Sasha'},
         {id: 5, name: 'Victor'},
     ];
+    
+    let messagesData = [
+        {id: 1, message: 'hi'},
+        {id: 2, message: 'hello'},
+        {id: 3, message: 'how r u'},
+        {id: 4, message: 'aloha'},
+        {id: 5, message: 'fuck off!!!!'},
+    ];
+
+    let dialodsElements = dialogsData.map(d => <DialogsItem name={d.name} id={d.id}/>);
+
+    let messagesElements = messagesData.map (m => <Message message={m.message}/>)
 
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogs__container}>
                 <div className={classes.dialogs__menu}>
                     <div className={classes.dialogs__avatars}>
-                        <DialogsItem name={dialogsData[0].name} id={dialogsData[0].id}/>
-                        <DialogsItem name={dialogsData[1].name} id={dialogsData[1].id}/>
-                        <DialogsItem name={dialogsData[2].name} id={dialogsData[2].id}/>
-                        <DialogsItem name={dialogsData[3].name} id={dialogsData[3].id}/>
-                        <DialogsItem name={dialogsData[4].name} id={dialogsData[4].id}/>
+                        {dialodsElements}
                     </div>
                 </div>
                 <div className={classes.dialogs__messages}>
-                    <div className="messageContainer">
-                        <p className="message">hello</p>
-                    </div>
+                    {messagesElements}
                     <form className={classes.dialogs__form}>
                         <input className={classes.input} type="text" placeholder="enter your message" />
                         <button className={classes.sendMessage} type="submit"></button>

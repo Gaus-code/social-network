@@ -1,7 +1,20 @@
 import React from "react";
 import classes from './myPosts.module.css';
 
-const MyPosts = () => {
+const Post = (props) => {
+    return (
+        <div className="posts">
+            <p className="post__text">{props.message}</p>
+        </div>
+    )
+}
+let posts = [
+    {id: 1, message: "hello<>", likesCount: 11},
+    {id: 2, message: "whats up????", likesCount: 8},
+]
+
+let postsElements = posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>);
+const MyPosts = (props) => {
     return <div className={classes.newPost}>
         <div className={classes.newPost__container}>
             <h2>Create a new Post</h2>
@@ -12,6 +25,7 @@ const MyPosts = () => {
                 </form>
             </div>
         </div>
+        {postsElements}
     </div>
 }
 export default MyPosts;
