@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Profile.module.css';
 import MyPosts from "./myPosts/post/myPosts";
 
-const Profile = () => {
+const Profile = (props) => {
     return <main className={classes.main}>
         <div className={classes.banner}>
             <div className={classes.banner__info}>
@@ -46,7 +46,7 @@ const Profile = () => {
                 </div>
             </div>
         </div>
-        <MyPosts />
+        <MyPosts addPost={props.addPost} />
     </main>
 }
 

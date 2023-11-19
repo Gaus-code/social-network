@@ -1,8 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 import classes from './myPosts.module.css';
-
-const Post = (props) => {
+export const Post = (props) => {
     return (
         <div className="posts">
             <p className="post__text">{props.message}</p>
@@ -14,12 +13,13 @@ let posts = [
     { id: 1, message: "hello<>", likesCount: 11 },
     { id: 2, message: "whats up????", likesCount: 8 },
 ]
+
 let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
 
 let newPostEl = React.createRef();
-let addPost = () => {
+let addPost = (props) => {
     let text = newPostEl.current.value;
-    alert(text);
+    props.addPost(text);
 }
 
 
