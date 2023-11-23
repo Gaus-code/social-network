@@ -21,6 +21,7 @@ let state = {
         postsData: [
             { id: 1, message: "hello<>", likesCount: 11 },
             { id: 2, message: "whats up????", likesCount: 8 },
+            { id: 2, message: "Hello state!!!", likesCount: 8000 },
         ],
         newPostText: 'it-kamasutra.bla-bla',
     }

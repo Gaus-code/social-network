@@ -4,16 +4,11 @@ import classes from './myPosts.module.css';
 import Post from './Post/Post';
 
 
-let posts = [
-    { id: 1, message: "hello<!!!>", likesCount: 11 },
-    { id: 2, message: "whats up????", likesCount: 8 },
-    { id: 3, message: "hi! Are you alive?", likesCount: 80 },
-]
-
-let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
 
 
-const MyPosts = (props) => { 
+const MyPosts = (props) => {   
+    let postsElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
+     
     let newPostEl = React.createRef();
     let addPost = (props) => {
         let text = newPostEl.current.value;
