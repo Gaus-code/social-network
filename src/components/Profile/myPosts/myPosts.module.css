@@ -1,4 +1,5 @@
 .newPost{
+    padding: 20px;
     width: 50%;
     margin-left: 27px;
     border-radius: 27px;
@@ -29,9 +30,6 @@ form{
     position: relative;
 }
 .input__btn{
-    position: absolute;
-    top: 1px;
-    right: 0;
     height: 50px;
     background-color: #E5F4E3;
     cursor: pointer;
