@@ -23,19 +23,27 @@ let state = {
             { id: 2, message: "whats up????", likesCount: 8 },
             { id: 2, message: "Hello state!!!", likesCount: 8000 },
         ],
-        newPostText: 'it-kamasutra.bla-bla',
+        newPostText: "it-kamasutra.bla-bla",
     }
 };
-
-export let addPost = (postMessage) =>
+window.state = state;
+export let addPost = () =>
 {
     let newPost = {
         id: 5,
-        message: postMessage,
-        likesCount: 0
+        message: state.profilePage.newPostText,
+        likesCount: 0,
     };
 
     state.profilePage.postsData.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
 }
+
+export let updateNewPostText = (newText) =>
+{
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
 export default state;
