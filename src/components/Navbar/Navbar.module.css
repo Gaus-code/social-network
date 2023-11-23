@@ -1,10 +1,11 @@
 .navbar{
     grid-area: nav;
     border-radius: 0px 0px 0px 22px;
-    background: #2B2B2B;
+    background: rgb(18,47,82);
+    background: linear-gradient(0deg, rgba(18,47,82,1) 43%, rgba(146,86,186,1) 98%);
 }
 .navbar__list{
-    margin: 80px auto;
+    margin: 110px auto;
     list-style-type: none;
 }
 .navbar__item{
@@ -13,16 +14,17 @@
 .navbar__link{
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 17px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    color: white;
+    color: black;
 }
 .home_icon{
-    width: 27px;
-    height: 25px;
+    width: 60px;
+    height: 60px;
 }
 
 a.active{

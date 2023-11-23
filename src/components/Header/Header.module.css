@@ -8,7 +8,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
+  background: rgb(146,86,186);
+  background: linear-gradient(90deg, rgba(146,86,186,1) 18%, rgba(86,77,217,1) 51%, rgba(98,181,173,1) 94%);
 }
 
 .header__container {
@@ -17,10 +18,17 @@
   gap: 80px;
   align-items: center;
 }
-
+.logo__container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Gill Sans", sans-serif;
+}
 .header__logo {
-  width: 140px;
-  height: 50px;
+  width: 70px;
+  height: 60px;
 }
 
 .header__list {

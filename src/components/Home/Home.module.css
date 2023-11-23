@@ -1,0 +1,58 @@
+.main {
+    display: grid;
+    grid-template-rows: 180px auto;
+    grid-template-columns: 679px auto;
+    grid-template-areas:
+        "header header"
+        "main miniBbar";
+}
+
+.banner {
+    width: 100%;
+    grid-area: header;
+    background: #DDEBF6;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner__image {
+    width: 180px;
+    height: 180px;
+}
+@media (max-width:1380px) {
+    .banner__image {
+        overflow: hidden;
+        display: none;
+    }
+    .banner__info {
+        width: 100%;
+    }
+}
+
+.banner__info {
+    margin: 24px auto;
+}
+
+.banner__info h2 {
+    font-size: 32px;
+}
+
+.banner__info p {
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.content {
+    grid-area: main;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.miniBar {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

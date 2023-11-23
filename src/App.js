@@ -3,8 +3,9 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
+import Home from './components/Home/Home';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
-import { addPost } from './redux/state';
+import addPost from './redux/state';
 
 function App(props) {
   return (
@@ -14,6 +15,7 @@ function App(props) {
         <Navbar />
         <div className='app-wrapper-content'>
           <Routes>
+            <Route path='/home' element={<Home/>} />
             <Route path='/dialogs' element={<Dialogs state={props.state.dialogsPage}/>} />
             <Route path='/profile' element={<Profile state={props.state.profilePage} addPost={props.addPost}/>} />
           </Routes>

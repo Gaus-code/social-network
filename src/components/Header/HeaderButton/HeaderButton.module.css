@@ -1,0 +1,15 @@
+.button {
+    background-color: inherit; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+    font-size: 21px;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+
+.button:hover {
+    background-color: rgba(98,181,173,1);
+    color: white;
+    transition: 0.4s;
+}

@@ -1,15 +1,23 @@
+.dialogs{
+    grid-area: contents;
+    height: 830px;
+}
 .dialogs__container{
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 .dialogs__menu{
-    width: 30%;
+    width: 25%;
     min-height: 570px;
-    background: #DDEBF6;
+    background: #c7daed;
     border-radius: 0px 22px 22px 0px;
 }
 .dialogs__avatars{
-    padding: 30px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .dialogs__img{
     width: 55px;
@@ -35,18 +43,27 @@
 
 .dialogs__messages{
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 70%;
-    height: 571px;
-    padding-bottom: 5px;
+    height: 97%;
+    padding: 10px 10px 5px 20px;
     border-bottom: 2px solid #2B2B2B;
+}
+.form__container{
+    margin: auto 0;
+    margin-bottom: 0px;
 }
 .dialogs__form{
     position: relative;
     bottom: 0px;
     left: 20px;
+    max-height: 41px;
+    display: flex;
+    padding-bottom: 15px;
     flex-direction: row;
-    align-self: flex-end;
     justify-content: center;
+    align-items: center;
 }
 .dialogs__form input{
     width: 80%;
@@ -57,12 +74,19 @@
     border: 2px solid #2B2B2B;
 }
 .dialogs__form button{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
-    padding: 0px;
-    margin-left: 5px;
+    margin-left: 15px;
     border: 2px solid #2B2B2B;
-    background-color: #5DA9E9;
+    background-color: #a6d987;
     cursor: pointer;
+    position: relative;
+}
+.svg__btn{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 30px;
+    height: 30px;
 }

@@ -3,6 +3,6 @@
   grid-template-areas: 
   "header header"
   "nav contents";
-  grid-template-rows: 130px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 100px 830px;
+  grid-template-columns: 300px auto;
 }
