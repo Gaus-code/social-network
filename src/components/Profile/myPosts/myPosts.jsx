@@ -2,7 +2,6 @@
 import React from "react";
 import classes from './myPosts.module.css';
 import Post from './Post/Post';
-import { type } from "@testing-library/user-event/dist/type";
 import { addPostActionCreator } from "../../../redux/state";
 import { updateNewPostTextActionCreator } from "../../../redux/state";
 
