@@ -62,6 +62,21 @@ let store =
     },
 }
 
+export const addPostActionCreator = () =>
+{
+    let ADD_POST = 'ADD-POST'
+    return {
+        type: ADD_POST,
+    }
+}
+export const updateNewPostTextActionCreator = (text) =>
+{
+    let UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
+    return {
+        type: UPDATE_POST_TEXT, 
+        newText: text,
+    }
+}
 //паттерн-observer -> почитать; button.addEventListener
 window.store = store;
 export default store;
