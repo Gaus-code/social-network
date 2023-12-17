@@ -5,12 +5,14 @@ import sidebarReducer from "./sidebarReducer";
 
 
 let reducers = combineReducers({
-    profileReducer: ProfileReducer,
-    dialogsReducer: DialogsReducer,
-    sidebarReducer: sidebarReducer,
+    profilePage: ProfileReducer,
+    dialogsPage: DialogsReducer,
+    sidebar: sidebarReducer
 });
 
-let store = createStore(reducers);
+// let store = createStore(reducers);
+
+const store = createStore(reducers);
 
 
 // console.log(store.getState())
